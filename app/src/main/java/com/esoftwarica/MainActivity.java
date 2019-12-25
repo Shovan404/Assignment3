@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.esoftwarica.Fragments.AboutFragment;
+import com.esoftwarica.Fragments.AddFragment;
+import com.esoftwarica.Fragments.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class    MainActivity extends AppCompatActivity {
@@ -30,10 +33,10 @@ public class    MainActivity extends AppCompatActivity {
                     selectedFragment = new HomeFragment();
                     break;
                 case R.id.nav_add:
-                    selectedFragment = new HomeFragment();
+                    selectedFragment = new AddFragment();
                     break;
                 case R.id.nav_about:
-                    selectedFragment = new HomeFragment();
+                    selectedFragment = new AboutFragment();
                     break;
 
 
