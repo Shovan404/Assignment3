@@ -35,8 +35,6 @@ public class EditStudent extends AppCompatActivity implements RadioGroup.OnCheck
 
         getWindow().setLayout((int) (width * .8), (int) (height * .8));
 
-
-
         etReName = findViewById(R.id.etReName);
         etReAge = findViewById(R.id.etReAge);
         etReAddress = findViewById(R.id.etReAddress);

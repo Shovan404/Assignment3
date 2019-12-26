@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(validate()) {
                     if ((username.equals("softwarica") && (password.equals("coventry")))) {
-                        Intent intent = new Intent(LoginActivity.this, com.novc21.esoftwarica.MainActivity.class);
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);
                         finish();
                     } else {
