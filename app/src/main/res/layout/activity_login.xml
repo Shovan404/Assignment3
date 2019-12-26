@@ -1,49 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".LoginActivity">
 
     <ImageView
-        android:layout_width="244dp"
-        android:layout_height="244dp"
-        android:src="@drawable/softlogo"/>
+        android:layout_width="266dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/softwarica" />
 
-
-
-
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/etUsername"
-        android:hint="Username"
-        android:textSize="30sp"
-        android:layout_margin="10dp"
-        />
+        android:layout_height="wrap_content">
 
-    <EditText
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Username"
+            android:textSize="22sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/etPassword"
-        android:hint="Password"
-        android:textSize="30sp"
-        android:layout_margin="10dp"
-        />
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_margin="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="22sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <Button
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnLogin"
+        android:layout_margin="12dp"
+        android:background="@drawable/round_button"
         android:text="Login"
-        android:textSize="30sp"
-        android:background="@drawable/roundedbutton"
         android:textColor="#FFFFFF"
-        android:layout_margin="10dp"
-        />
-
-
+        android:textSize="20sp" />
 </LinearLayout>
